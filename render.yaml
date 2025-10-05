@@ -13,7 +13,7 @@ services:
       mkdir -p models
       cp backend/models/fake_news_model.joblib models/ || echo "WARNING: Model copy failed, app will use fallback"
       echo "Building React frontend..."
-      cd frontend && npm ci --only=production && npm run build && cd ..
+      cd frontend && npm install && npm run build && cd ..
       echo "Copying static files..."
       mkdir -p static
       cp -r frontend/build/* static/
