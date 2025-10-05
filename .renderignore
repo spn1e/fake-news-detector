@@ -1,0 +1,14 @@
+backend/venv/
+frontend/node_modules/
+frontend/build/
+*.pyc
+__pycache__/
+.git/
+.env
+*.log
+.DS_Store
+README.md
+docker-compose.yml
+nginx.conf
+backend/Dockerfile
+frontend/Dockerfile
