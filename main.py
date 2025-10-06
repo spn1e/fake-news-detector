@@ -39,12 +39,12 @@ print("Initializing Fake News Detector...")
 detector = None
 
 try:
-    # Try multiple model paths
+    # Try multiple model paths (prioritize .pkl files)
     possible_paths = [
-        'models/fake_news_model.joblib',
-        'backend/models/fake_news_model.joblib',
         'models/fake_news_model.pkl',
         'backend/models/fake_news_model.pkl',
+        'models/fake_news_model.joblib',
+        'backend/models/fake_news_model.joblib',
     ]
 
     model_loaded = False
